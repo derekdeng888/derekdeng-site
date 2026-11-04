@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>derek deng — the only living twink beauty editor</title>
+<meta name="description" content="derek deng is a beauty writer, creator and editor of the tasteful twink, best known for the fragrance matrices: an ongoing survey of queer fragrance culture.">
+<meta property="og:title" content="derek deng — the only living twink beauty editor">
+<meta property="og:description" content="derek deng is a beauty writer, creator and editor of the tasteful twink, best known for the fragrance matrices: an ongoing survey of queer fragrance culture.">
+<meta property="og:image" content="https://derekdeng.com/img/derek-deng.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&amp;family=Pinyon+Script&amp;display=swap">
+<style>
+body{margin:0;background:#FAFAFA}
+a{color:#363738}a:hover{color:#B15C9C}
+.wrap{max-width:1200px;margin:0 auto;padding-left:24px;padding-right:24px;box-sizing:border-box}
+.fu{font-family:Futura,'Futura PT',Jost,'Century Gothic',sans-serif}
+.sc{font-family:'Pinyon Script',cursive;font-weight:400}
+.it{font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-style:italic}
+@keyframes rise{from{transform:translateY(14px);opacity:.35}to{transform:none;opacity:1}}
+@keyframes wordin{from{transform:translateY(0.45em) rotate(2deg);opacity:.15;filter:blur(3px)}to{transform:none;opacity:1;filter:none}}
+@keyframes sweep{from{background-size:0% 0.16em}to{background-size:100% 0.16em}}
+@keyframes wave{0%,100%{transform:rotate(0)}20%{transform:rotate(14deg)}40%{transform:rotate(-8deg)}60%{transform:rotate(10deg)}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes twinkle{0%,100%{opacity:.35;transform:scale(.85) rotate(0)}50%{opacity:1;transform:scale(1.1) rotate(20deg)}}
+.rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.d2{animation-delay:.16s}.d3{animation-delay:.24s}.d4{animation-delay:.32s}
+.w{display:inline-block;animation:wordin .7s cubic-bezier(.2,.7,.2,1) both}
+.w.hl{background-image:linear-gradient(#D183BC,#D183BC);background-repeat:no-repeat;background-position:0 92%;background-size:100% 0.16em;animation:wordin .7s cubic-bezier(.2,.7,.2,1) both,sweep .8s ease 1.1s both}
+.w.hi{transform-origin:70% 80%;animation:wordin .7s cubic-bezier(.2,.7,.2,1) both,wave 1.6s ease-in-out 1.2s 1}
+.spark{display:inline-block;color:#D183BC;animation:twinkle 3.2s ease-in-out infinite}
+.track{display:flex;gap:44px;align-items:center;width:max-content;animation:marquee 40s linear infinite}
+.marq:hover .track{animation-play-state:paused}
+.logo{filter:grayscale(1) opacity(.5);transition:filter .35s ease}
+.logo:hover{filter:none}
+.soc{transition:background-color .25s ease,color .25s ease,transform .25s ease}
+.soc:hover{transform:translateY(-3px) scale(1.06)}
+.lift{transition:transform .35s ease,border-color .35s ease}
+.lift:hover{transform:translateY(-4px);border-color:#D183BC !important}
+.pill{transition:background-color .25s ease,color .25s ease}
+.pill:hover{background-color:#363738 !important;color:#FFFFFF !important}
+.ul{background-image:linear-gradient(#D183BC,#D183BC);background-size:0% 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .35s ease}
+.ul:hover{background-size:100% 1px}
+@keyframes typing{from{max-width:0}to{max-width:var(--w)}}
+@keyframes caret{0%,100%{border-color:#D183BC}50%{border-color:transparent}}
+.type{display:inline-block;vertical-align:bottom;white-space:nowrap;overflow:hidden;max-width:var(--w);border-right:3px solid #D183BC;padding-right:4px;animation:typing var(--d,1.3s) steps(var(--n)) .3s both,caret 1s step-end infinite}
+@supports (animation-timeline: view()){.type.onscroll{animation:typing linear both,caret 1s step-end infinite;animation-timeline:view(),auto;animation-range:entry 0% entry 100%,normal}}
+@keyframes mist{from{filter:blur(14px);opacity:0;letter-spacing:0.04em}to{filter:none;opacity:1;letter-spacing:-0.02em}}
+@keyframes drift1{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,-30px)}}
+@keyframes drift2{0%,100%{transform:translate(0,0)}50%{transform:translate(-50px,20px)}}
+@keyframes spray{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:.55}}
+.mist{animation:mist 1.6s cubic-bezier(.2,.7,.2,1) .2s both}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none}
+.b1{animation:spray 2s ease both,drift1 14s ease-in-out 2s infinite}
+.b2{animation:spray 2.4s ease .3s both,drift2 16s ease-in-out 2.4s infinite}
+.tw{position:absolute;color:#D183BC;animation:twinkle 3s ease-in-out infinite;pointer-events:none}
+@media (prefers-reduced-motion:reduce){.type,.mist,.blob,.tw{animation:none !important}.rise,.w,.track,.spark{animation:none !important}.lift,.pill,.ul,.logo{transition:none}}
+@media (max-width:760px){
+  .nav-links{display:none !important}
+  .mnav{display:flex !important}
+  .big{font-size:42px !important}
+  .wrap{padding-left:20px !important;padding-right:20px !important}
+  .marq img{max-height:44px}
+  .hero{flex-direction:column !important}
+  .hero h1{font-size:44px !important}
+  .stats{grid-template-columns:minmax(0,1fr) !important}
+  .three{grid-template-columns:minmax(0,1fr) !important}
+  .four{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+  .two{grid-template-columns:minmax(0,1fr) !important}
+}
+</style>
+</head>
+<body>
+<div style="text-transform:lowercase;background:#FAFAFA;color:#363738;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:1.5">
+
+  <header style="border-bottom:1px solid #E4E4E4;background:#FAFAFA">
+    <nav class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:18px;padding-bottom:18px" aria-label="Main">
+      <a href="#top" class="sc" style="font-size:34px;line-height:1;color:#B15C9C;text-decoration:none">derek deng</a>
+      <div class="nav-links fu" style="display:flex;gap:28px;align-items:center;font-size:14px;color:#363738">
+        <a href="bylines.html" class="ul" style="text-decoration:none">bylines</a>
+        <a href="https://thetastefultwink.substack.com" class="ul" style="text-decoration:none">substack</a>
+        <a href="#contact" class="pill" style="text-decoration:none;border:1px solid #363738;border-radius:999px;padding:8px 16px">work with me</a>
+      </div>
+    </nav>
+    <div class="mnav wrap fu" style="display:none;gap:8px;flex-wrap:wrap;padding-bottom:14px;font-size:14px"><a href="bylines.html" style="text-decoration:none;border:1px solid #E4E4E4;background:#FFFFFF;border-radius:999px;padding:7px 13px">bylines</a><a href="https://thetastefultwink.substack.com" style="text-decoration:none;border:1px solid #E4E4E4;background:#FFFFFF;border-radius:999px;padding:7px 13px">substack</a><a href="#contact" style="text-decoration:none;border:1px solid #E4E4E4;background:#FFFFFF;border-radius:999px;padding:7px 13px">work with me</a></div>
+  </header>
+
+  <div style="position:relative;overflow:hidden">
+  <div aria-hidden="true" class="blob b1" style="left:4%;top:60px;width:420px;height:300px;background:#F3C6E0"></div>
+  <div aria-hidden="true" class="blob b2" style="right:8%;top:220px;width:380px;height:320px;background:#E8E8E8"></div>
+  <span aria-hidden="true" class="tw" style="right:20%;top:70px;font-size:22px">✦</span>
+  <span aria-hidden="true" class="tw" style="right:7%;top:520px;font-size:14px;animation-delay:-1.2s">✦</span>
+  <span aria-hidden="true" class="tw" style="left:47%;top:90px;font-size:16px;animation-delay:-2s">✦</span>
+  <section id="top" class="wrap" style="position:relative;padding-top:72px;padding-bottom:64px">
+    <div class="hero" style="display:flex;gap:64px;align-items:center">
+      <div style="flex:1 1 560px;min-width:0;display:flex;flex-direction:column;gap:22px">
+        
+        <h1 class="fu mist" style="margin:0;font-weight:500;font-size:66px;line-height:1.04;letter-spacing:-0.02em;text-wrap:balance">hi! i'm the only living <em style="color:#D183BC;font-style:italic;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:0.18em;text-decoration-color:#E9BFDB">twink beauty editor</em></h1>
+        <p class="rise" style="animation-delay:1s;margin:0;max-width:520px;font-size:17px;color:#5A585B">i'm derek — people online know me as "the fragrance twink," but at heart, i'm part journalist, part queer anthropologist. with a ba in public policy from duke university, i love to twink outside the box and write about what beauty reveals about our identities, desires and the culture around us.<br><br>I began my career as a beauty editor, but found myself increasingly drawn to stories beyond the boundaries of traditional beauty journalism, particularly its intersections with queer culture. I now work independently as a freelance beauty writer, content creator, and editor of The Tasteful Twink on Substack.</p>
+        <div class="rise d3 fu" style="animation-delay:1.15s;font-weight:300;letter-spacing:0.02em;display:flex;gap:12px;flex-wrap:wrap;padding-top:6px;font-size:15px">
+          <a href="https://thetastefultwink.substack.com" class="pill" style="text-decoration:none;background:#D183BC;color:#FFFFFF;border:1px solid #D183BC;border-radius:999px;padding:13px 23px">read the substack</a>
+          <a href="https://forms.gle/x8Dg2fAC5kQriZm58" target="_blank" rel="noopener" class="pill" style="text-decoration:none;border:1px solid #D183BC;color:#B15C9C;border-radius:999px;padding:13px 23px">be a part of my research ✦</a>
+        </div>
+        <div class="rise d3" style="animation-delay:1.3s;display:flex;gap:10px;align-items:center">
+          <a href="https://www.instagram.com/derekdengg" target="_blank" rel="noopener" class="soc" aria-label="instagram" title="instagram" style="display:flex;width:44px;height:44px"><img src="img/icon-instagram.png" alt="" style="width:44px;height:44px;display:block"></a>
+          <a href="https://www.tiktok.com/@derekdengg" target="_blank" rel="noopener" class="soc" aria-label="tiktok" title="tiktok" style="display:flex;width:44px;height:44px"><img src="img/icon-tiktok.png" alt="" style="width:44px;height:44px;display:block"></a>
+          <a href="https://thetastefultwink.substack.com" target="_blank" rel="noopener" class="soc" aria-label="substack" title="substack" style="display:flex;width:44px;height:44px"><img src="img/icon-substack.png" alt="" style="width:44px;height:44px;display:block"></a>
+          <span class="it" style="font-size:14px;color:#A3A3A3;padding-left:4px">@derekdengg</span>
+        </div>
+      </div>
+      <figure class="rise d4" style="flex:0 1 420px;min-width:0;width:100%;max-width:420px;margin:0;display:flex;flex-direction:column;gap:10px">
+        <div style="position:relative">
+          <div aria-hidden="true" style="position:absolute;inset:0;transform:translate(14px,14px);border:1px solid #CFCFCF;border-radius:24px"></div>
+          <div style="position:relative;aspect-ratio:4/5;border-radius:24px;overflow:hidden;background:#F1E4EC">
+            <img src="img/derek-deng.jpg" alt="Derek Deng in a white polo against a pink backdrop" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block">
+          </div>
+        </div>
+        
+      </figure>
+    </div>
+  </section>
+  </div>
+
+  <section class="wrap" style="padding-bottom:64px">
+    <div class="stats" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#E4E4E4;border:1px solid #E4E4E4;border-radius:16px;overflow:hidden">
+      <div style="background:#FFFFFF;padding:24px 22px;display:flex;flex-direction:column;gap:4px"><b class="fu" style="font-weight:500;font-size:36px">120k<span style="color:#D183BC">+</span></b><span class="it" style="font-size:14px;color:#8C8C8C">followers across tiktok, instagram and substack</span></div>
+      <div style="background:#FFFFFF;padding:24px 22px;display:flex;flex-direction:column;gap:4px"><b class="fu" style="font-weight:500;font-size:36px">7M</b><span class="it" style="font-size:14px;color:#8C8C8C">views on the gay fragrance matrix</span></div>
+      <div style="background:#FFFFFF;padding:24px 22px;display:flex;flex-direction:column;gap:4px"><b class="fu" style="font-weight:500;font-size:36px">29k<span style="color:#D183BC">+</span></b><span class="it" style="font-size:14px;color:#8C8C8C">people surveyed on their signature scent</span></div>
+    </div>
+  </section>
+
+  <section id="press" style="background:#FFFFFF;border-top:1px solid #E4E4E4;border-bottom:1px solid #E4E4E4">
+    <div class="wrap" style="padding-top:44px;padding-bottom:18px">
+      <h2 class="fu" style="margin:0;font-weight:500;font-size:30px;color:#A3A3A3">as featured in <span class="spark" aria-hidden="true" style="font-size:18px;animation-delay:-1s">✦</span></h2>
+    </div>
+    <div class="marq" style="overflow:hidden;padding-bottom:44px">
+      <div class="track fu" style="font-size:34px;text-transform:none">
+        <a href="https://www.dazeddigital.com/beauty/article/71138/1/the-rise-of-queer-perfume-gay-scent-fragrance-derek-deng" target="_blank" rel="noopener" class="logo" style="display:flex;align-items:center;height:64px"><img src="img/press-dazed.png" alt="Dazed" style="height:34px;width:auto;display:block"></a><span aria-hidden="true" style="color:#D183BC;font-size:16px">✦</span>
+        <a href="https://www.businessoffashion.com/articles/beauty/why-does-chanel-need-to-sponsor-a-substack/" target="_blank" rel="noopener" class="logo" style="display:flex;align-items:center;height:64px"><img src="img/press-bof.png" alt="The Business of Fashion" style="height:46px;width:auto;display:block"></a><span aria-hidden="true" style="color:#D183BC;font-size:16px">✦</span>
+        <a href="https://www.nbcnews.com/news/amp/rcna196957" target="_blank" rel="noopener" class="logo" style="display:flex;align-items:center;height:64px"><img src="img/press-nbc.png" alt="NBC News" style="height:58px;width:auto;display:block"></a><span aria-hidden="true" style="color:#D183BC;font-size:16px">✦</span>
+        <a href="https://www.cosmopolitan.com/lifestyle/a43904992/tiktok-class/" target="_blank" rel="noopener" class="logo" style="display:flex;align-items:center;height:64px"><img src="img/press-cosmopolitan.png" alt="Cosmopolitan" style="height:30px;width:auto;display:block"></a><span aria-hidden="true" style="color:#D183BC;font-size:16px">✦</span>
+        <a href="https://www.whowhatwear.com/beauty/fragrance/best-first-date-fragrances-attractive-scents" target="_blank" rel="noopener" class="logo" style="display:flex;align-items:center;height:64px"><img src="img/press-whowhatwear.png" alt="Who What Wear" style="height:20px;width:auto;display:block"></a><span aria-hidden="true" style="color:#D183BC;font-size:16px">✦</span>
+        <a href="https://www.queerty.com/what-does-a-top-smell-like-one-journalist-went-deep-undercover-to-learn-the-fragrant-truth-20251119/" target="_blank" rel="noopener" class="logo" style="display:flex;align-items:center;height:64px"><img src="img/press-queerty.png" alt="Queerty" style="height:42px;width:auto;display:block"></a><span aria-hidden="true" style="color:#D183BC;font-size:16px">✦</span>
+        <a href="https://www.dazeddigital.com/beauty/article/71138/1/the-rise-of-queer-perfume-gay-scent-fragrance-derek-deng" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1" class="logo" style="display:flex;align-items:center;height:64px"><img src="img/press-dazed.png" alt="" style="height:34px;width:auto;display:block"></a><span aria-hidden="true" style="color:#D183BC;font-size:16px">✦</span>
+        <a href="https://www.businessoffashion.com/articles/beauty/why-does-chanel-need-to-sponsor-a-substack/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1" class="logo" style="display:flex;align-items:center;height:64px"><img src="img/press-bof.png" alt="" style="height:46px;width:auto;display:block"></a><span aria-hidden="true" style="color:#D183BC;font-size:16px">✦</span>
+        <a href="https://www.nbcnews.com/news/amp/rcna196957" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1" class="logo" style="display:flex;align-items:center;height:64px"><img src="img/press-nbc.png" alt="" style="height:58px;width:auto;display:block"></a><span aria-hidden="true" style="color:#D183BC;font-size:16px">✦</span>
+        <a href="https://www.cosmopolitan.com/lifestyle/a43904992/tiktok-class/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1" class="logo" style="display:flex;align-items:center;height:64px"><img src="img/press-cosmopolitan.png" alt="" style="height:30px;width:auto;display:block"></a><span aria-hidden="true" style="color:#D183BC;font-size:16px">✦</span>
+        <a href="https://www.whowhatwear.com/beauty/fragrance/best-first-date-fragrances-attractive-scents" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1" class="logo" style="display:flex;align-items:center;height:64px"><img src="img/press-whowhatwear.png" alt="" style="height:20px;width:auto;display:block"></a><span aria-hidden="true" style="color:#D183BC;font-size:16px">✦</span>
+        <a href="https://www.queerty.com/what-does-a-top-smell-like-one-journalist-went-deep-undercover-to-learn-the-fragrant-truth-20251119/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1" class="logo" style="display:flex;align-items:center;height:64px"><img src="img/press-queerty.png" alt="" style="height:42px;width:auto;display:block"></a><span aria-hidden="true" style="color:#D183BC;font-size:16px;margin-right:44px">✦</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="matrices" style="background:#F2F2F2;border-top:1px solid #E4E4E4">
+    <div class="wrap" style="padding-top:80px;padding-bottom:80px;display:flex;flex-direction:column;gap:32px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:10px;max-width:620px">
+          <h2 class="fu" style="margin:0;font-weight:500;font-size:44px;color:#A3A3A3"><span class="type onscroll" style="--w:6.4em;--n:12">the <span class="sc" style="font-size:1.25em;color:#D183BC">matrices</span></span></h2>
+          <p class="it" style="margin:0;color:#6E6E6E">it started with one question to men on grindr: what's your signature scent? now it's a running survey of 29,000+ gays, lesbians, bisexuals, enbies and everyone in between.</p>
+        </div>
+        <a href="https://thetastefultwink.substack.com" class="it ul" style="font-size:15px;color:#B15C9C;text-decoration:none">the deep dives on substack →</a>
+      </div>
+      <div class="four" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px">
+        <a href="img/matrix-gay.jpg" target="_blank" rel="noopener" class="lift" style="text-decoration:none;display:block;background:#FFFFFF;border:1px solid #E4E4E4;border-radius:16px;padding:10px">
+          <span style="display:block;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:#FFFFFF"><img src="img/matrix-gay.jpg" alt="the gay fragrance matrix" style="width:100%;height:100%;object-fit:cover;display:block"></span>
+        </a>
+        <a href="img/matrix-lesbian.jpg" target="_blank" rel="noopener" class="lift" style="text-decoration:none;display:block;background:#FFFFFF;border:1px solid #E4E4E4;border-radius:16px;padding:10px">
+          <span style="display:block;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:#FFFFFF"><img src="img/matrix-lesbian.jpg" alt="the lesbian fragrance matrix" style="width:100%;height:100%;object-fit:cover;display:block"></span>
+        </a>
+        <a href="img/matrix-bisexual.jpg" target="_blank" rel="noopener" class="lift" style="text-decoration:none;display:block;background:#FFFFFF;border:1px solid #E4E4E4;border-radius:16px;padding:10px">
+          <span style="display:block;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:#FFFFFF"><img src="img/matrix-bisexual.jpg" alt="the bisexual fragrance matrix" style="width:100%;height:100%;object-fit:cover;display:block"></span>
+        </a>
+        <a href="img/matrix-lip-balm.jpg" target="_blank" rel="noopener" class="lift" style="text-decoration:none;display:block;background:#FFFFFF;border:1px solid #E4E4E4;border-radius:16px;padding:10px">
+          <span style="display:block;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:#FFFFFF"><img src="img/matrix-lip-balm.jpg" alt="the lip balm matrix" style="width:100%;height:100%;object-fit:cover;display:block"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" style="border-top:1px solid #E4E4E4;background:#FFFFFF">
+    <div class="wrap two" style="padding-top:64px;padding-bottom:48px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:end">
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <h2 class="fu" style="margin:0;font-weight:500;font-size:44px;color:#A3A3A3"><span class="type onscroll" style="--w:6em;--n:12">work with <span class="sc" style="font-size:1.3em;color:#D183BC">me</span></span></h2>
+        <p class="it" style="margin:0;color:#8C8C8C;max-width:440px">i'm open to brand partnerships, press opportunities, hosting and more. happy to twink outside the box.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:16px">
+        <div style="display:flex;flex-direction:column;gap:2px"><span class="it" style="font-size:13px;color:#A3A3A3">partnerships</span><a href="mailto:partnerships@derekdeng.com" class="fu ul" style="text-decoration:none;font-size:18px">partnerships@derekdeng.com</a></div>
+        <div style="display:flex;flex-direction:column;gap:2px"><span class="it" style="font-size:13px;color:#A3A3A3">everything else</span><a href="mailto:hi@derekdeng.com" class="fu ul" style="text-decoration:none;font-size:18px">hi@derekdeng.com</a></div>
+      </div>
+    </div>
+    <div class="wrap fu" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:18px;padding-bottom:26px;border-top:1px solid #E4E4E4;font-size:14px;color:#A3A3A3">
+      <span>the tasteful twink <span aria-hidden="true" style="color:#D183BC">✦</span> derek deng</span>
+      <span style="display:flex;gap:20px"><a href="https://www.tiktok.com/@derekdengg" class="ul" style="text-decoration:none">tiktok</a><a href="https://www.instagram.com/derekdengg" class="ul" style="text-decoration:none">instagram</a><a href="https://thetastefultwink.substack.com" class="ul" style="text-decoration:none">substack</a></span>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
